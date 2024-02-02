@@ -89,6 +89,22 @@ textarea {
   height: auto; /* maintain aspect ratio */
 }
 
+.header-bar {
+  background-color: #f8f9fa; /* light gray */
+  padding: 20px;
+  text-align: center;
+}
+
+.header-bar .name {
+  font-size: 2em; /* large font size */
+  margin-bottom: 10px;
+}
+
+.header-bar .subtitle {
+  font-size: 1.2em; /* slightly larger than normal font size */
+  color: #6c757d; /* dark gray */
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
