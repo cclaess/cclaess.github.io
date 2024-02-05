@@ -84,25 +84,62 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.img-profile {
-  width: 300px; /* adjust as needed */
-  height: auto; /* maintain aspect ratio */
-}
-
 .header-bar {
-  background-color: #f8f9fa; /* light gray */
-  padding: 20px;
-  text-align: center;
+  background-color: #000080; /* dark blue */
+  padding: 1px;
+  text-align: left; /* left-align the text */
 }
 
 .header-bar .name {
   font-size: 2em; /* large font size */
-  margin-bottom: 10px;
+  font-weight: bold; /* bold text */
+  margin-bottom: 1px; /* small space between this and the next element */
+  padding-left: 100px; /* add space to the left of the text */
+  font-family: "Calibri Light", sans-serif; /* fallback font */
+  color: #ffffff; /* white */
 }
 
 .header-bar .subtitle {
   font-size: 1.2em; /* slightly larger than normal font size */
-  color: #6c757d; /* dark gray */
+  margin-top: 1px; /* small space between this and the previous element */
+  padding-left: 100px; /* add space to the left of the text */
+  color: #ffffff; /* white */
+  font-family: "Calibri Light", sans-serif; /* fallback font */
+}
+
+.affiliations {
+  text-align: left; /* left-align the text */
+  padding-left: 100px; /* add space to the left of the text */
+  margin-top: 10px; /* small space between this and the previous element */
+  margin-bottom: 10px; /* small space between this and the next element */
+}
+
+.affiliations img {
+  height: 50px; /* adjust as needed */
+  width: auto; /* maintain aspect ratio */
+  margin-right: 10px; /* small space to the right of the image */
+}
+
+main {
+  margin-top: 100px; /* large space between the header and the main content */
+}
+
+.img-profile {
+  width: 500px; /* adjust as needed */
+  height: auto; /* maintain aspect ratio */
+  margin: 0 auto; /* center the image */
+  display: block; /* remove any extra space around the image */
+}
+
+.about-me {
+  width: 500px; /* adjust as needed, similar to img-profile */
+  margin: 0 auto; /* center the text */
+  font-family: "Calibri Light", sans-serif; /* fallback font */
+}
+
+.contact-links img {
+  height: 30px; /* set a width for the logos */
+  margin: 0 10px; /* add some space between the logos */
 }
 
 /* ==========================================================================
