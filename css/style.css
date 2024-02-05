@@ -84,8 +84,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background-image: url('images/1_HvVN6uD1NDWVA57cqppKcw.jpg'); /* background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1; /* make sure the background image is behind the content */
+}
+
 .header-bar {
-  background-color: #000080; /* dark blue */
+  background: linear-gradient(to right, #000080, #06a3f8); /* dark blue */
   padding: 1px;
   text-align: left; /* left-align the text */
 }
@@ -107,6 +115,72 @@ textarea {
   font-family: "Calibri Light", sans-serif; /* fallback font */
 }
 
+main {
+  margin-top: 100px; /* large space between the header and the main content */
+  background-color: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
+  z-index: 1; /* make sure the content is on top of the background image */
+}
+
+.img-profile {
+  width: 500px; /* adjust as needed */
+  height: auto; /* maintain aspect ratio */
+  margin: 0 auto; /* center the image */
+  display: block; /* remove any extra space around the image */
+}
+
+.about-me {
+  width: 500px; /* adjust as needed, similar to img-profile */
+  /* center the text */
+  /* large space after the about-me section */
+  margin: 0 auto 100px auto;
+  font-family: "Calibri Light", sans-serif; /* fallback font */
+}
+
+.contact-links img {
+  height: 30px; /* set a width for the logos */
+  margin: 0 10px; /* add some space between the logos */
+}
+
+.experiences {
+  width: 500px; /* make the experiences section as wide as the about-me section */
+  margin: 0 auto 100px auto; /* center the experiences section */
+  font-family: "Calibri Light", sans-serif; /* same font as the about-me section */
+}
+
+.experience {
+  position: relative; /* position the date relative to the box */
+  padding: 20px; /* add some space inside the box */
+  border: 1px solid #ccc; /* add a border around the box */
+  border-radius: 5px; /* round the corners of the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* add a drop shadow to create a floating effect */
+  margin-bottom: 30px; /* add some space between each box */
+  background-color: #fff; /* set the background color of the box */
+}
+
+.experience h3 {
+  font-size: 1.2em; /* adjust as needed */
+  font-weight: bold;
+}
+
+.experience h4 {
+  font-size: 1em; /* adjust as needed */
+  font-weight: normal;
+}
+
+.experience-date {
+  color: #f3022f; /* change this to the color you want */
+  position: absolute;
+  top: 0; /* adjust as needed */
+  right: 10px; /* adjust as needed */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8; /* light gray */
+}
+
 .affiliations {
   text-align: left; /* left-align the text */
   padding-left: 100px; /* add space to the left of the text */
@@ -120,27 +194,6 @@ textarea {
   margin-right: 10px; /* small space to the right of the image */
 }
 
-main {
-  margin-top: 100px; /* large space between the header and the main content */
-}
-
-.img-profile {
-  width: 500px; /* adjust as needed */
-  height: auto; /* maintain aspect ratio */
-  margin: 0 auto; /* center the image */
-  display: block; /* remove any extra space around the image */
-}
-
-.about-me {
-  width: 500px; /* adjust as needed, similar to img-profile */
-  margin: 0 auto; /* center the text */
-  font-family: "Calibri Light", sans-serif; /* fallback font */
-}
-
-.contact-links img {
-  height: 30px; /* set a width for the logos */
-  margin: 0 10px; /* add some space between the logos */
-}
 
 /* ==========================================================================
    Helper classes
