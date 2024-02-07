@@ -93,7 +93,7 @@ textarea {
 /*}*/
 
 .header-bar {
-  background: linear-gradient(to right, rgba(0, 0, 128, 0.5), rgba(6, 163, 248, 0.5)); /* dark blue */
+  background: linear-gradient(to right, rgba(86,106,98,0.5), rgba(117,174,211,0.5)); /* dark blue */
   padding: 1px; /* small space around the header */
   text-align: left; /* left-align the text */
   margin-top: 50px; /* large space between the top of the page and the header */
