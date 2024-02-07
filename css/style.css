@@ -92,14 +92,6 @@ textarea {
 /*  z-index: -1; !* make sure the background image is behind the content *!*/
 /*}*/
 
-.body {
-  background-image: url('images/1_HvVN6uD1NDWVA57cqppKcw.jpg'); /* background image */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -1; /* make sure the background image is behind the content */
-}
-
 .header-bar {
   background: linear-gradient(to right, rgba(0, 0, 128, 0.5), rgba(6, 163, 248, 0.5)); /* dark blue */
   padding: 1px; /* small space around the header */
@@ -154,6 +146,64 @@ main {
   transform: scale(1.05); /* make the logos slightly larger on hover */
 }
 
+.publications {
+  width: 750px;
+  margin: 0 auto 100px auto;
+  font-family: "Calibri Light", sans-serif;
+}
+
+.publication {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.publication-content {
+  flex: 1; /*1 auto*/;
+}
+
+.publication:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.publication h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.publication h4 {
+  font-size: 1.2em; /* adjust as needed */
+  font-weight: normal;
+  font-style: italic; /* italicize the text */
+}
+
+.publication a {
+  display: block;
+  font-size: 1em;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.publication .contact-links img {
+  height: 20px;
+  width: auto;
+}
+
+.publication img {
+  width: 50%;
+  height: auto;
+  flex: 1;
+  margin-right: 20px;
+}
+
+
 .experiences {
   width: 750px; /* make the experiences section as wide as the about-me section */
   margin: 0 auto 100px auto; /* center the experiences section */
@@ -168,6 +218,10 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* add a drop shadow to create a floating effect */
   margin-bottom: 30px; /* add some space between each box */
   background-color: #fff; /* set the background color of the box */
+}
+
+.experience:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* make the shadow slightly darker on hover */
 }
 
 .experience h3 {
