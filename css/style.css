@@ -255,6 +255,37 @@ main {
   margin-right: 10px; /* small space to the right of the image */
 }
 
+@media only screen and (max-width: 600px) {
+  /* Your CSS for mobile devices goes here */
+  .header-bar .name {
+    font-size: 1.5em;
+    padding-left: 20px;
+  }
+
+  .header-bar .subtitle {
+    font-size: 1.2em;
+    padding-left: 20px;
+  }
+
+  .img-profile {
+    width: 100%;
+  }
+
+  .about-me, .publications, .experiences {
+    width: 100%;
+  }
+
+  .publication {
+    flex-direction: column;
+  }
+
+  .publication img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* ==========================================================================
    Helper classes
