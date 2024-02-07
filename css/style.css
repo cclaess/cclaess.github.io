@@ -255,6 +255,26 @@ main {
   margin-right: 10px; /* small space to the right of the image */
 }
 
+@media only screen and (max-width: 1500px) {
+  .header-bar .name {
+    font-size: 2em;
+    padding-left: 50px;
+  }
+
+  .header-bar .subtitle {
+    font-size: 1.5em;
+    padding-left: 50px;
+  }
+
+  .affiliations {
+    padding-left: 50px;
+  }
+
+  .affiliations img {
+    height: 30px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   /* Your CSS for mobile devices goes here */
   .header-bar .name {
@@ -283,6 +303,14 @@ main {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .affiliations {
+    padding-left: 20px;
+  }
+
+  .affiliations img {
+    height: 20px;
   }
 }
 
