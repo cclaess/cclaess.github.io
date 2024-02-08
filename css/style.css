@@ -122,18 +122,22 @@ main {
   z-index: 1; /* make sure the content is on top of the background image */
 }
 
-.img-profile {
+.profile-section {
+  display: flex;
+  justify-content: space-between;
   width: 750px; /* adjust as needed */
+  margin: 0 auto 100px auto;
+}
+
+.img-profile {
+  width: 35%; /* adjust as needed */
   height: auto; /* maintain aspect ratio */
-  margin: 0 auto; /* center the image */
+  margin: auto auto; /* center the image */
   display: block; /* remove any extra space around the image */
+  margin-left: 20px;
 }
 
 .about-me {
-  width: 750px; /* adjust as needed, similar to img-profile */
-  /* center the text */
-  /* large space after the about-me section */
-  margin: 0 auto 100px auto;
   font-family: "Calibri Light", sans-serif; /* fallback font */
 }
 
@@ -158,6 +162,9 @@ main {
   width: 750px;
   margin: 0 auto 100px auto;
   font-family: "Calibri Light", sans-serif;
+  padding-top: 20px; /* add some space at the bottom of the section */
+  border-top: 1px solid #ccc; /* add a border at the bottom of the section */
+
 }
 
 .publication {
@@ -224,6 +231,8 @@ main {
   width: 750px; /* make the experiences section as wide as the about-me section */
   margin: 0 auto 100px auto; /* center the experiences section */
   font-family: "Calibri Light", sans-serif; /* same font as the about-me section */
+  padding-top: 20px; /* add some space at the bottom of the section */
+  border-top: 1px solid #ccc; /* add a border at the bottom of the section */
 }
 
 .experience {
@@ -303,8 +312,14 @@ main {
     padding-left: 20px;
   }
 
+  .profile-section {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
   .img-profile {
     width: 100%;
+    margin: 0;
   }
 
   .about-me, .publications, .experiences {
