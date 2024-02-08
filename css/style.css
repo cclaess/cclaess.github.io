@@ -137,9 +137,17 @@ main {
   font-family: "Calibri Light", sans-serif; /* fallback font */
 }
 
+.contact-links a {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
 .contact-links img {
   height: 30px; /* set a width for the logos */
-  margin: 0 10px; /* add some space between the logos */
+  width: auto; /* maintain aspect ratio */
+  margin-right: 10px; /* add some space between the logos */
+  padding: 0;
 }
 
 .contact-links img:hover {
@@ -194,6 +202,14 @@ main {
 .publication .contact-links img {
   height: 20px;
   width: auto;
+  margin-right: 10px; /* add some space between the logos */
+  padding: 0;
+}
+
+.publication .contact-links a {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 .publication img {
