@@ -1,509 +1,225 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+body{transition: all 0.5s ease;margin:0!important;font-family:Poppins,sans-serif!important;letter-spacing:2px!important;color:#fff;background:#0f1011;font-weight:200; margin: auto!important}
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+h1{text-align:center!important;margin-top:50px!important;font-weight:200!important;font-size:3em}
+*{margin:0px;padding:0px;}
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+h2{text-align:center!important;margin-top:50px!important;font-weight:200!important;font-size:2em}
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+.center{margin:auto!important;text-align:center!important}
+
+.vertical-center{min-height:50%;min-height:50vh;display:flex;align-items:center; margin-bottom: 0;}
+
+.spacing{margin-top:5%;margin-top:5vh;margin-bottom:5%;margin-bottom:5vh}
+
+.title-desc{margin-top:20px!important;margin-bottom:30px!important;max-width:450px!important;font-weight:200;font-size:18px}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    transition: transform 0.15s ease-in-out;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
+.resume-text{position: static;font-weight: 200;letter-spacing: 5px;font-size: 16px;margin-left: auto;margin-right: 10px;text-align: right;}
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.resume-text a{color:inherit; text-decoration: none; display: flex; padding:12px;} 
+
+.resume-text a img{ padding-right:14px;}
+
+@media screen and (max-width: 576px) {.resume-text a{justify-content: center;}}
+@media screen and (min-width: 575px) {.resume-text a{justify-content: flex-end;}}
+
+.light-mode{color:#0d0e0f!important;background:#fff!important;}
+
+.light-mode .resume-img{ background: url(../img/download-cloud.svg) no-repeat;}
+
+.resume-img{margin-right: 5px; display: block; -moz-box-sizing: border-box; box-sizing: border-box; width: 30px; height: 30px; background: url(../img/download-cloud-light.svg) no-repeat; }
+
+button{  background: url(../img/sun.svg) no-repeat;  color: transparent;  box-shadow: none;  border: none;  width: 50px;  height: 50px;  background-position: center;  position: absolute;  cursor: pointer;  }
+
+.light-mode button{background: url(../img/moon.svg) no-repeat; background-position: center;}
+
+button:focus {outline:0;}
+
+.justify-content{text-align: justify;}
+
+.container-fluid {
+    padding-top: 20px; /* Adjust this value as needed */
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.some-padding{padding-left: 2vh;padding-right: 2vh;}
+
+.pub-year{text-align: left!important;}
+
+.year ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+.year ul li {
+    padding: 10px 0; /* Add top and bottom padding */
+    position: relative; /* Needed for ::before pseudo-element */
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+.year ul li::before {
+    content: attr(data-venue); /* Add content here, e.g., "CONF" for a conference */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width: 100px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    /*background: #fff;  Adjust as needed */
+    text-align: left;
+    line-height: 20px; /* Adjust as needed */
 }
 
-/*
- * Remove default fieldset styles.
- */
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+.highlight ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+.highlight ul li {
+    padding: 10px 0; /* Add top and bottom padding */
+    position: relative; /* Needed for ::before pseudo-element */
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/*body {*/
-/*  background-image: url('images/1_HvVN6uD1NDWVA57cqppKcw.jpg'); !* background image *!*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
-/*  background-attachment: fixed;*/
-/*  z-index: -1; !* make sure the background image is behind the content *!*/
-/*}*/
-
-.header-bar {
-  background: linear-gradient(to right, rgba(86,106,98,0.5), rgba(117,174,211,0.5)); /* dark blue */
-  padding: 1px; /* small space around the header */
-  text-align: left; /* left-align the text */
-  margin-top: 50px; /* large space between the top of the page and the header */
+.highlight ul li::before {
+    content: attr(data-venue); /* Add content here, e.g., "CONF" for a conference */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    width: 100px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    /*background: #fff;  Adjust as needed */
+    text-align: left;
+    line-height: 20px; /* Adjust as needed */
 }
 
-.header-bar .name {
-  font-size: 2.5em; /* large font size */
-  font-weight: bold; /* bold text */
-  margin-bottom: 1px; /* small space between this and the next element */
-  padding-left: 100px; /* add space to the left of the text */
-  font-family: "Calibri Light", sans-serif; /* fallback font */
-  color: #ffffff; /* white */
+a[href] {
+    text-decoration: none; /* Remove underline */
+    color: #00b0ff; /* Light blue color */
+    transition: filter 0.15s ease-in-out;
 }
-
-.header-bar .subtitle {
-  font-size: 1.8em; /* slightly larger than normal font size */
-  margin-top: 1px; /* small space between this and the previous element */
-  padding-left: 100px; /* add space to the left of the text */
-  color: #ffffff; /* white */
-  font-family: "Calibri Light", sans-serif; /* fallback font */
+a[href]:hover {
+    filter: brightness(1.2); /* Light blue color */
 }
-
-main {
-  margin-top: 100px; /* large space between the header and the main content */
-  background-color: rgba(255, 255, 255, 0.5); /* white with 50% opacity */
-  z-index: 1; /* make sure the content is on top of the background image */
+a.external-element {
+    border: 1px solid #00b0ff; /* Change color as needed */
+    padding: 5px; /* Add some space around the text */
+    display: inline-block; /* Needed to apply padding and border correctly */
+    transition: filter 0.15s ease-in-out;
 }
-
-.profile-section {
-  display: flex;
-  justify-content: space-between;
-  width: 750px; /* adjust as needed */
-  margin: 0 auto 100px auto;
-}
-
-.img-profile {
-  width: 35%; /* adjust as needed */
-  height: auto; /* maintain aspect ratio */
-  margin: auto auto; /* center the image */
-  display: block; /* remove any extra space around the image */
-  margin-left: 20px;
-}
-
-.about-me {
-  font-family: "Calibri Light", sans-serif; /* fallback font */
-}
-
-.contact-links a {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-links img {
-  height: 30px; /* set a width for the logos */
-  width: auto; /* maintain aspect ratio */
-  margin-right: 10px; /* add some space between the logos */
-  padding: 0;
-}
-
-.contact-links img:hover {
-  transform: scale(1.05); /* make the logos slightly larger on hover */
-}
-
-.publications {
-  width: 750px;
-  margin: 0 auto 100px auto;
-  font-family: "Calibri Light", sans-serif;
-  padding-top: 20px; /* add some space at the bottom of the section */
-  border-top: 1px solid #ccc; /* add a border at the bottom of the section */
-
-}
-
-.publication {
-  position: relative;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  margin-bottom: 30px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: start;
+a.external-element:hover {
+    filter: brightness(1.2);
 }
 
 .publication-content {
-  flex: 1; /*1 auto*/;
+    margin-left: 100px; /* Leave 12% space on the left */
+    text-align: left;
 }
 
-.publication:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+.equal-content {
+    text-align: left;
 }
 
-.publication h3 {
-  font-size: 1.2em;
-  font-weight: bold;
+.nav-header nav ul {
+    display: flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-.publication h4 {
-  font-size: 1.2em; /* adjust as needed */
-  font-weight: normal;
-  font-style: italic; /* italicize the text */
+.nav-header nav ul li {
+    margin-right: 20px; /* Add some space between the items */
+    margin-top: 20px; /* Add some space between the items */
 }
 
-.publication a {
-  display: block;
-  font-size: 1em;
-  color: #0000EE;
-  text-decoration: underline;
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 3em;
+    color: #007bff;
 }
 
-.publication .contact-links img {
-  height: 20px;
-  width: auto;
-  margin-right: 10px; /* add some space between the logos */
-  padding: 0;
+.filter-container {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px; /* Adjust this value as needed */
 }
 
-.publication .contact-links a {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
+.filter-container label {
+    margin-right: 10px;
+}
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px 32px 8px 12px;
+    line-height: 1.5;
+    color: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath fill='currentColor' d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' transform='rotate(90 4 4)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 8px 8px;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.publication img {
-  width: 50%;
-  height: auto;
-  flex: 1;
-  margin-right: 20px;
+.custom-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-
-.experiences {
-  width: 750px; /* make the experiences section as wide as the about-me section */
-  margin: 0 auto 100px auto; /* center the experiences section */
-  font-family: "Calibri Light", sans-serif; /* same font as the about-me section */
-  padding-top: 20px; /* add some space at the bottom of the section */
-  border-top: 1px solid #ccc; /* add a border at the bottom of the section */
+.custom-select:hover {
+    border-color: #b8c3ce;
 }
 
-.experience {
-  position: relative; /* position the date relative to the box */
-  padding: 20px; /* add some space inside the box */
-  border: 1px solid #ccc; /* add a border around the box */
-  border-radius: 5px; /* round the corners of the box */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* add a drop shadow to create a floating effect */
-  margin-bottom: 30px; /* add some space between each box */
-  background-color: #fff; /* set the background color of the box */
+/* Style for dropdown options */
+.custom-select option {
+    background-color: #fff;
+    color: #333;
 }
 
-.experience:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* make the shadow slightly darker on hover */
+/* Dark mode styles */
+body.dark-mode .custom-select {
+    border-color: #495057;
 }
 
-.experience h3 {
-  font-size: 1.2em; /* adjust as needed */
-  font-weight: bold;
+body.dark-mode .custom-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.experience h4 {
-  font-size: 1.2em; /* adjust as needed */
-  font-weight: normal;
-  font-style: italic; /* italicize the text */
+body.dark-mode .custom-select:hover {
+    border-color: #6c757d;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f8f8f8; /* light gray */
+body.dark-mode .custom-select option {
+    background-color: #333;
+    color: #fff;
 }
 
-.affiliations {
-  text-align: left; /* left-align the text */
-  padding-left: 100px; /* add space to the left of the text */
-  margin-top: 10px; /* small space between this and the previous element */
-  margin-bottom: 10px; /* small space between this and the next element */
+b {
+    font-weight: 500; /* Slightly less bold than the default 700 */
 }
-
-.affiliations img {
-  height: 50px; /* adjust as needed */
-  width: auto; /* maintain aspect ratio */
-  margin-right: 10px; /* small space to the right of the image */
-}
-
-@media only screen and (max-width: 1500px) {
-  .header-bar .name {
-    font-size: 2em;
-    padding-left: 50px;
-  }
-
-  .header-bar .subtitle {
-    font-size: 1.5em;
-    padding-left: 50px;
-  }
-
-  .affiliations {
-    padding-left: 50px;
-  }
-
-  .affiliations img {
-    height: 30px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  /* Your CSS for mobile devices goes here */
-  .header-bar .name {
-    font-size: 1.5em;
-    padding-left: 20px;
-  }
-
-  .header-bar .subtitle {
-    font-size: 1.2em;
-    padding-left: 20px;
-  }
-
-  .profile-section {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  .img-profile {
-    width: 100%;
-    margin: 0;
-  }
-
-  .about-me, .publications, .experiences {
-    width: 100%;
-  }
-
-  .publication {
-    flex-direction: column;
-  }
-
-  .publication img {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .affiliations {
-    padding-left: 20px;
-  }
-
-  .affiliations img {
-    height: 20px;
-  }
-}
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-

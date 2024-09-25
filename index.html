@@ -1,123 +1,159 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cris Claessens</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Personal GitHub Page of Cris H.B. Claessens, Ph.D. Candidate Computer Vision in
-  Healthcare">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" shrink-to-fit="no">
+    <meta content="portfolio website for Cris Claessens" name="description">
+    <meta content="Cris Claessens https://github.com/cclaess" name="author">
+    <title>Cris Claessens | PhD Researcher TU/e</title>
 
-  <meta property="og:title" content="C.H.B. Claessens">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="cclaess.github.io">
-  <meta property="og:image" content="images/Claessens_Cris_EE_PROM_AS_5075.jpg">
+    <link href="img/icon.ico" rel="shortcut icon"/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <style>
+        .wave-text {
+            position: relative;
+            display: inline-block;
+        }
+        .wave-text::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -1.2em;
+            transform: translateY(-50%);
+            width: 1em;
+            height: 1em;
+            background-image: url('img/wave.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+        }
+    </style>
 
-  <link rel="icon" href="/icon.png" type="image/png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+<button onclick="dayNightToggle()">Toggle dark mode</button>
 
-  <header>
-    <div class="header-bar">
-      <p class="name">Cris H.B. Claessens</p>
-      <p class="subtitle">Ph.D. Candidate Computer Vision in Healthcare</p>
-    </div>
-  </header>
-
-  <main>
-    <div class="profile-section">
-      <div class="about-me">
-        <h1>About me</h1>
-        <p>
-          I am a Ph.D. candidate at the Eindhoven University of Technology. My research focuses on the
-          development of computer vision algorithms for the analysis of medical images. I am particularly
-          interested in the application of deep learning techniques for the early diagnosis of cancer using
-          3D medical images. My research is part of a close collaboration between the Eindhoven University of
-          Technology, the Erasmus University Medical Center Rotterdam, and the Catharina Hospital Eindhoven.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:c.h.b.claessens@tue.nl">
-            <img src="images/gmail.png" alt="Email">
-          </a>
-          <a href="https://www.linkedin.com/in/cris-claessens-04077b14b/">
-            <img src="images/linkedin.png" alt="LinkedIn">
-          </a>
-          <a href="https://github.com/cclaess/">
-            <img src="images/25231.png" alt="GitHub">
-          </a>
+<div class="container vertical-center">
+    <div class="row">
+        <div class="center">
+            <h1><span class="wave-text">Hi, I'm Cris</span></h1>
+            <p class="title-desc center">Medical Computer Vision Researcher at <a href="https://www.tue.nl/en/">TU/e</a> </p>
+            <p class="title-desc center">PhD Electrical Engineering</p>
+            <div class="col-md-8 col-sm-9 center">
+                <div class="row" id="social-list"></div>
+            </div>
         </div>
-      </div>
-      <img class="img-profile" src="images/Claessens_Cris_EE_PROM_PO_AS_5075.jpg" alt="Picture of C.H.B. Claessens">
+        <img class="center col-10 col-sm-10 col-lg-4 col-md-4" src="img/me.jpg" style="border-radius: 50%; object-fit: cover; width: 70%;">
     </div>
+</div>
 
-    <div class="publications">
-      <h1>Publications</h1>
-      <div class="publication">
-        <img src="images/spie2024_aug.png" alt="Augmentations SPIE2024">
-        <div class="publication-content">
-          <h3>Evaluating Task Specific Augmentations in Self-Supervised Pre-Training for 3D Medical
-            Image Analysis</h3>
-          <h4>SPIE Medical Imaging 2024, San Diego, CA, USA (accepted Aug 2023, published soon..)</h4>
-          <div class="contact-links">
-            <a href="https://github.com/cclaess/3DMedDINO">
-              <img src="images/25231.png" alt="GitHub">
-            </a>
-          </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="center col-10 col-sm-10 col-lg-8 col-md-8">
+            <h2>About Me</h2> 
+            <p class="justify-content">I am a Ph.D. candidate passionate about tackling clinical challenges and translating them into innovative technical solutions. My work focuses on developing cutting-edge computer vision algorithms to analyze 3D medical images, with a strong interest in applying deep learning techniques for early cancer diagnosis. I thrive on the complexity of medical data and the opportunity to contribute to advancing patient care through technology. My research is part of a close collaboration between (a) the Eindhoven University of Technology, The Netherlands, (b) the Erasmus University Medical Center Rotterdam, The Netherlands, and (c) the Catharina Hospital Eindhoven, The Netherlands.</p>
         </div>
-      </div>
-      <!-- Add more publications as needed -->
     </div>
+</div>
 
-    <div class="experiences">
-      <h1>Experiences</h1>
-        <div class="experience">
-          <h3>Ph.D. Candidate Computer Vision in Healthcare</h3>
-          <h4>Eindhoven University of Technology</h4>
-          <ul>
-            <li>Early detection of lung metastases in colorectal cancer patients</li>
-            <li>Ovarium tumor classification using multi modality data</li>
-            <li>Automated interpretation of peritoneal metastases</li>
-          </ul>
+<!--
+<div class="container-fluid">
+    <div class="row spacing">
+        <div class="center col-10 col-sm-10 col-lg-5 col-md-5 spacing">
+            <a class="some-padding" href="publications.html"> Research Output</a> <a class="some-padding" href="projects.html">Selected Projects</a> <a class="some-padding" href="services.html">Services</a>
         </div>
-        <div class="experience">
-          <h3>MSc. Medical Engineering</h3>
-          <h4>Eindhoven University of Technology</h4>
-          <ul>
-            <li>Specialization in medical image analysis, computer vision, and MR physics</li>
-            <li>Thesis on "Transformation of intracranial direct electrical stimulation sites to
-              postoperative MRI in awake glioma surgery"</li>
-          </ul>
-        </div>
-        <div class="experience">
-          <h3>BSc. Biomedical Engineering</h3>
-          <h4>Eindhoven University of Technology</h4>
-          <ul>
-            <li>Specialization in medical image analysis, deep-learning, and cardiovascular bio-mechanics</li>
-            <li>Thesis on "Alterations in phospholipid metabolism upon neoadjuvent chemotherapy treatment in breast
-              cancer patients assessed by 31-P MRSI at 7 Tesla"</li>
-          </ul>
-        </div>
-        <!-- Add more experiences as needed -->
     </div>
-  </main>
+</div>
 
-  <footer>
-    <div class="affiliations">
-      <img src="images/TUe-logo-descriptor-line-scarlet-rgb.png" alt="TU/e logo">
-      <img src="images/logo_vca.png" alt="VCA logo">
-      <img src="images/logo-erasmusmc-rgb-wit-nl-768x302.jpg" alt="Erasmus MC logo">
-      <img src="images/catharina_logo.png" alt="Catharina Hospital logo">
+
+<div class="container-fluid resume-text">
+        <a href="resume/CV.pdf">
+            <div class="resume-img"></div>
+            Resume
+        </a>
+</div>
+-->
+
+<div class="container">
+    <div class="row">
+        <div class="center col-10 col-sm-10 col-lg-10 col-md-10 spacing">
+            <h1>My Publications</h1>
+            <div class="filter-container">
+                <label for="year-filter">Filter by year:</label>
+                <select id="year-filter" class="custom-select">
+                    <option value="all">All Years</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const yearFilter = document.getElementById('year-filter');
+                    const publications = document.querySelectorAll('.year');
+                
+                    yearFilter.addEventListener('change', function() {
+                        const selectedYear = this.value;
+                        
+                        publications.forEach(yearSection => {
+                            if (selectedYear === 'all' || yearSection.id === selectedYear) {
+                                yearSection.style.display = 'block';
+                            } else {
+                                yearSection.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            </script>
+
+            <div class="year" id="2024">
+                <h2 class="pub-year">2024</h2>
+                <hr>
+                <ul>
+                    <li data-venue="MICCAI CAPTION">
+                        <div class="publication-content">
+                            <a href="">
+                                Multi-center ovarian tumor classification using hierarchical transformer-based multiple-instance learning</a><br>
+                                <p>Authors: <b>C.H.B. Claessens</b>; E.W.R. Schultz; A. Koch; I. Nies; T.A.E. Hellström; J. Nederend; I. Niers-Stobbe; A. Bruining; J.M.J. Piek; P.H.N. de With; F. van der Sommen</p>
+                                <a href="https://caption-workshop.github.io/">International Conference on Medical Image Computing and Computer-Assisted Intervention - Cancer Prevention, detection, and intervenTion</a><br>
+                                <a class="external-element" href="">Paper incoming in October 2024</a>
+                        </div>
+                    </li>
+
+
+                    <li data-venue="SPIE MI">
+                        <div class="publication-content">
+                            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12926/129261L/Evaluating-task-specific-augmentations-in-self-supervised-pre-training-for/10.1117/12.3000850.full">
+                                Evaluating Task-specific Augmentations in Self-Supervised Pre-training for 3D Medical Image Analysis</a><br>
+                                <p>Authors: <b>C. H. B. Claessens</b>; J. J. M. Hamm; C. G. A. Viviers; J. Nederend; D. J. Grunhagen; P. J. Tanis; P. H. N. de With; F. van der Sommen</p>
+
+                                <a href="https://spie.org/conferences-and-exhibitions/medical-imaging#_=_">SPIE Medical Imaging</a><br>
+                                <a class="external-element" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12926/129261L/Evaluating-task-specific-augmentations-in-self-supervised-pre-training-for/10.1117/12.3000850.full">abstract</a> 
+                                <a class="external-element" href="https://www.spiedigitallibrary.org/proceedings/Download?urlId=10.1117%2F12.3000850">pdf</a>
+                                <a class="external-element" href="https://github.com/cclaess/3DMedDINO">code</a>
+
+                        </div>
+                    </li>
+                    <!-- Add more publications as needed -->
+                </ul>
+            </div>
+            <!--
+            <div>
+            <p class="equal-content">&#42; denotes equal contribution</p>   
+            </div>
+            -->
+        </div>
     </div>
-  </footer>
+</div>
 
-  <script src="js/app.js"></script>
+<script src="js/load.js" type="text/javascript"></script>
+<script>
 
+
+</script>
 </body>
-
 </html>
