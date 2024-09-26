@@ -13,7 +13,9 @@ var socialtags = [{
 }, {
     img: "img/google-scholar.svg",
     link: "https://scholar.google.com/citations?view_op=list_works&hl=en&user=48laGBwAAAAJ"
-    
+}, {
+    img: "img/orcid.svg",
+    link: "https://orcid.org/0009-0006-2152-8674"
     }]
 
 function loadSocialIcons() {
