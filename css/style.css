@@ -20,8 +20,7 @@ h2{text-align:center!important;margin-top:50px!important;font-weight:200!importa
     transition: transform 0.15s ease-in-out;
 }
 .social-icon:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
+    transform: scale(1.05);
 }
 
 .resume-text{position: static;font-weight: 200;letter-spacing: 5px;font-size: 16px;margin-left: auto;margin-right: 10px;text-align: right;}
@@ -105,19 +104,20 @@ button:focus {outline:0;}
 a[href] {
     text-decoration: none; /* Remove underline */
     color: #00b0ff; /* Light blue color */
-    transition: filter 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    display: inline;
 }
 a[href]:hover {
-    filter: brightness(1.2); /* Light blue color */
+    text-shadow: 0 0 1px rgba(51, 195, 255, 0.5);
 }
 a.external-element {
     border: 1px solid #00b0ff; /* Change color as needed */
     padding: 5px; /* Add some space around the text */
     display: inline-block; /* Needed to apply padding and border correctly */
-    transition: filter 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 a.external-element:hover {
-    filter: brightness(1.2);
+    text-shadow: 0 0 1px rgba(51, 195, 255, 0.5);
 }
 
 .publication-content {
